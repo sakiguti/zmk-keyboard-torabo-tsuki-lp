@@ -20,21 +20,21 @@
 
         layer_0 {
             bindings = <
-&none         &none      &none         &none      &none      &none                                          &none        &none  &none      &none     &none                 &none
-&kp ESCAPE    &kp Q      &kp W         &kp E      &kp R      &kp T                                          &kp Y        &kp U  &kp I      &kp O     &kp P                 &kp BSPC
-&kp LEFT_WIN  &kp A      &kp S         &kp D      &kp F      &kp G        &none                    &none    &kp H        &kp J  &kp K      &kp L     &kp SEMI              &kp SQT
-&kp LSHFT     &kp Z      &kp X         &kp C      &kp V      &kp B        &kp SPACE                &kp RET  &kp N        &kp M  &kp COMMA  &kp DOT   &mt RIGHT_SHIFT FSLH  &kp RSHFT
-&kp LCTRL     &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &kp SPACE  &lt 2 SPACE  &kp LANG_ZENKAKUHANKAKU  &tog 1   &lt 3 ENTER  &none  &none      &kp RGUI  &kp RCTRL             &kp RCTRL
+&none         &none      &none         &none      &none           &none                          &none        &none  &none      &none     &none                 &none
+&kp ESCAPE    &kp Q      &kp W         &kp E      &kp R           &kp T                          &kp Y        &kp U  &kp I      &kp O     &kp P                 &kp BSPC
+&kp LEFT_WIN  &kp A      &kp S         &kp D      &kp F           &kp G      &none      &none    &kp H        &kp J  &kp K      &kp L     &kp SEMI              &kp SQT
+&kp LSHFT     &kp Z      &kp X         &kp C      &kp V           &kp B      &kp SPACE  &kp RET  &kp N        &kp M  &kp COMMA  &kp DOT   &mt RIGHT_SHIFT FSLH  &kp RSHFT
+&kp LCTRL     &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &kp LEFT_SHIFT  &kp SPACE  &kp LANG1  &tog 1   &lt 3 ENTER  &none  &none      &kp RGUI  &kp RCTRL             &kp RCTRL
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans                  &trans     &trans           &trans           &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans                  &trans     &mkp MB4         &mkp MB5         &trans  &trans  &trans
-&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &trans  &trans  &trans     &mkp LCLK        &mkp RCLK        &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans     &mo 4            &mo 5            &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &mkp MCLK  &none            &none            &trans  &trans  &trans
+&trans  &trans          &trans          &trans           &trans  &trans                  &trans     &trans     &trans     &trans  &trans  &trans
+&trans  &trans          &kp UP_ARROW    &trans           &trans  &trans                  &trans     &mkp MB4   &mkp MB5   &trans  &trans  &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans     &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
+&trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans     &mo 4      &mo 5      &trans  &trans  &trans
+&trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &mkp MCLK  &none      &none      &trans  &trans  &trans
             >;
         };
 
@@ -60,11 +60,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -77,6 +77,5 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
-
     };
 };
